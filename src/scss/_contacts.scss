@@ -1,0 +1,52 @@
+.contacts {
+
+
+  &__title {
+    @include section-title;
+    
+  }
+
+  &__wrapper {
+    @include flex-block;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  &__map {
+    min-width: 45%;
+    border-radius: 1rem;
+  }
+
+  &__info {
+    @include flex-block;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__link {
+    font-weight: $fw-bold;
+    transition: $transition;
+
+    &:hover {
+      color: $btn-color;
+    }
+  }
+
+  &__img {
+    margin-right: 1.5rem;
+    position: relative;
+    top: 0.5rem;
+  }
+
+  &__strong-text {
+    font-weight: $fw-bold;
+    color: $btn-color;
+  }
+
+}

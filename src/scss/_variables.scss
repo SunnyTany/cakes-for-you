@@ -9,6 +9,8 @@ $transition: all .4s ease-in-out;
 
 @mixin section-title() {
   color: $btn-color;
+  margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 @mixin btn-order() {

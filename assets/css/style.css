@@ -685,7 +685,11 @@ button {
   border-top: 4.375rem solid #f9e6c3;
 }
 .variations__title {
+  margin-bottom: 3rem;
+
   color: #a2101a;
+
+  font-size: 2rem;
 }
 .variations__block {
   display: grid;
@@ -755,7 +759,11 @@ button {
   line-height: 1.8;
 }
 .advantages__title {
+  margin-bottom: 3rem;
+
   color: #a2101a;
+
+  font-size: 2rem;
 }
 .advantages__content {
   display: -webkit-box;
@@ -997,7 +1005,11 @@ button {
   padding: 6.25rem 0;
 }
 .steps__title {
+  margin-bottom: 3rem;
+
   color: #a2101a;
+
+  font-size: 2rem;
 }
 .steps__inner {
   display: -webkit-box;
@@ -1241,6 +1253,72 @@ button {
 }
 .footer__text {
   cursor: pointer;
+}
+
+.contacts__title {
+  margin-bottom: 3rem;
+
+  color: #a2101a;
+
+  font-size: 2rem;
+}
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  margin-bottom: 3rem;
+
+  gap: 4rem;
+}
+.contacts__map {
+  min-width: 45%;
+
+  border-radius: 1rem;
+}
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.contacts__text {
+  text-align: justify;
+}
+.contacts__link {
+  -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+
+  font-weight: 700;
+}
+.contacts__link:hover {
+  color: #a2101a;
+}
+.contacts__img {
+  position: relative;
+  top: 0.5rem;
+
+  margin-right: 1.5rem;
+}
+.contacts__strong-text {
+  color: #a2101a;
+
+  font-weight: 700;
 }
 
 .feedback-form {
