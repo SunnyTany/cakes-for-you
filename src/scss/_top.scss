@@ -1,0 +1,118 @@
+.top {
+  background-color: $bg-main-color;
+  position: relative;
+  padding: 5rem 0;
+
+  &::before {
+    content: '';
+    height: 4rem;
+    width: 99.1vw;
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    background-image: linear-gradient($bg-color 50%, $bg-main-color);
+  }
+
+  &__inner {
+    padding-top: 3.125rem;
+    @include flex-block;
+  }
+
+  &__content {
+    width: 15.625rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    // max-width: 31.25rem;
+    font-family: 'Pacifico', cursive;
+    color: $btn-color;
+    text-shadow: 0.0625rem 0.0625rem 0.1875rem $akcent-color;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    margin: 3.125rem 0;
+    position: relative;
+    margin-bottom: 4rem;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0 0 2.5rem;
+    font-size: 1.25rem;
+    width: 7.5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -3.125rem;
+    }
+  }
+
+  &__cake-1 {
+    left: 6.25rem;
+
+    &::after {
+      background-image: url('../../assets/images/top/cake.svg');
+      width: 1.875rem;
+      height: 1.75rem;
+  }
+  }
+
+  &__cake-2 {
+    left: 8.125rem;
+
+    &::after {
+      background-image: url('../../assets/images/top/cake2.svg');
+      width: 2rem;
+      height: 1.875rem;
+  }
+  }
+
+  &__cupcake {
+    left: 10rem;
+
+    &::after {
+      background-image: url('../../assets/images/top/cupcake.svg');
+      width: 1.5625rem;
+      height: 2.25rem;
+  }
+  }
+
+  &__cookies {
+    left: 11.875rem;
+
+    &::after {
+      background-image: url('../../assets/images/top/cookies.svg');
+      width: 2.25rem;
+      height: 1.875rem;
+    }
+  }
+
+  &__muffin {
+    left: 13.75rem;
+
+    &::after {
+      background-image: url('../../assets/images/top/muffin.svg');
+      width: 2rem;
+      height: 1.75rem;
+    }
+  }
+
+  &__btn {
+    @include btn-order;
+    transition: $transition;
+
+    &:hover {
+      background-color: $bg-color;
+      color: $akcent-color;
+    }
+  }
+
+
+}
+
+// __slider-wrapper
+// __slider

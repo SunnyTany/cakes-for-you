@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  font-size: $font-size;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color;
+  color: $akcent-color;
+  font-family: $font-family;
+  letter-spacing: 0.1111rem;
+}
+
+.container {
+  max-width: $max-width-content;
+  margin: 0 auto;
+  padding: 0 0.9rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+button {
+  border: none;
+}

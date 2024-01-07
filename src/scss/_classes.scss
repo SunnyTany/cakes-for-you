@@ -1,0 +1,57 @@
+.block {
+  border: 0.055rem solid $btn-color;
+  border-radius: 0.55rem;
+  padding: 1.11rem;
+  position: relative;
+  max-width: 22.22rem;
+}
+
+.block::before,
+.block::after {
+  content: '';
+  position: absolute;
+  left: 1.11rem;
+  bottom: -1.11rem;
+  border: 0.55rem solid transparent;
+  border-top: 0.55rem solid $btn-color;
+}
+
+.block::after {
+  border-top: 10px0.55rem solid $bg-color;
+  bottom: -1rem;
+}
+
+.block-1 {
+  border: 1px solid $btn-color;
+  border-radius: 0.55rem;
+  padding: 1.11rem;
+  position: relative;
+  max-width: 22.22rem;
+  margin-bottom: 1.11rem;
+}
+
+.block-1::before,
+.block-1::after {
+  content: '';
+  position: absolute;
+  left: 1.11rem;
+  bottom: -1.11rem;
+  border: 0.55rem solid transparent;
+  border-top: 0.55rem solid $btn-color;
+}
+
+.block-1::after {
+  border-top: 0.55rem solid transparent;
+  bottom: -1rem;
+}
+
+.btn {
+  padding: 1.25rem 3.125rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $btn-color;
+  color: $bg-color;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3.125rem;
+}

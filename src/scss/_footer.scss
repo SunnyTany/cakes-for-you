@@ -1,0 +1,123 @@
+.footer {
+  display: flex;
+  align-items: flex-end;
+  height: 50.1875rem;
+  color: $bg-color;
+  background-image: url(../../assets/images/footer/footer-bg.png);
+
+& .container {
+  width: $max-width-content;
+}
+
+  &__top-block {
+    @include flex-block;
+    padding: 3.1367rem 0 2.25rem;
+  }
+
+  &__left-block {
+    @include flex-block;
+    flex-direction: column;
+  }
+  
+  &__social-icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__social-icon {
+    border-radius: 50%;
+    transition: $transition;
+
+    &:hover {
+      box-shadow: 0 0 0.7rem $bg-color;
+    }
+  }
+
+  &__facebook {
+    background: url('../../assets/images/social/footer-facebook.svg');
+    @include social-icon;
+    background-size: 30%;
+  }
+
+  &__instagram {
+    background: url('../../assets/images/social/footer-instagram.svg');
+    @include social-icon;
+  }
+
+  &__viber {
+    background: url('../../assets/images/social/footer-viber.svg');
+    @include social-icon;
+  }
+
+  &__telegram {
+    background: url('../../assets/images/social/footer-telegram.svg');
+    @include social-icon;
+  }
+
+  &__menu {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-bottom: 1.5625rem;
+    padding-bottom: 0.9375rem;
+    border-left: 0.0625rem solid transparent;
+    padding-left: 0;
+    transition: $transition;
+
+    &:hover {
+      padding-left: 2rem;
+      border-color: $bg-color;
+    }
+  }
+
+  &__link {
+    transition: $transition;
+
+    &:hover {
+      letter-spacing: 0.25rem;
+    }
+  }
+
+  &__right-block {
+    @include flex-block;
+    flex-direction: column;
+    // text-align: right;
+    margin-bottom: 1.5625rem;
+  }
+
+  &__bottom-block {
+    @include flex-block;
+    padding: 1.125rem 0;
+    border-top: 0.0625rem solid $bg-color;
+
+  }
+
+  &__bottom {
+    padding: 1.125rem 0;
+    font-size: 0.9rem;
+    border-left: 0.0625rem solid transparent;
+    padding-left: 0;
+    transition: $transition;
+    text-shadow: 0 0 0 $bg-color;
+    transition: $transition;
+  }
+
+  &__bottom.link:hover {
+    text-shadow: 0 0 0.9rem $bg-color;
+    letter-spacing: 0.25rem;
+  }
+
+  &__img {
+    position: relative;
+    margin-right: 2rem;
+    top: 0.6rem;
+  }
+
+  &__text {
+    cursor: pointer;
+  }
+}

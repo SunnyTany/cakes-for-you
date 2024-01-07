@@ -1,0 +1,80 @@
+.variations {
+  padding: 50px 0;
+  background-image: url(../../assets/images/variations/variation-bg.jpg);
+  background-repeat: repeat;
+  position: relative;
+
+  &__::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -50.625rem;
+    border: 46.25rem solid transparent;
+    border-top: 4.375rem solid $bg-main-color;
+  }
+
+  &__title {
+    @include section-title;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 3rem;
+  }
+
+  &__img-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(../../assets/images/variations/cake__01-01.jpg);
+  }
+
+  &__img-2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(../../assets/images/variations/cake__01-02.jpg);
+  }
+
+  &__img-3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(../../assets/images/variations/cake__01-03.jpg);
+  }
+
+  &__img-4 {
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url(../../assets/images/variations/cake__02-011.jpg);
+  }
+
+  &__img-5 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(../../assets/images/variations/cake__03-01.jpg);
+  }
+
+  &__img-6 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../../assets/images/variations/cake__03-02.jpg);
+  }
+
+  &__img-7 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(../../assets/images/variations/cake__03-03.jpg);
+  }
+
+  &__img-8 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(../../assets/images/variations/cake__03-04.jpg);
+  }
+
+  &__img {
+    height: 17.625rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    /* border-radius: 10px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+  }
+
+}

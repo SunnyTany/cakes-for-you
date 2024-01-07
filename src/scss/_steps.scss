@@ -1,0 +1,43 @@
+.steps {
+  padding: 6.25rem 0;
+
+  &__title {
+    @include section-title;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 6.25rem;
+    margin-top: 4.375rem;
+  }
+
+  &__step {
+    width: 15.625rem;
+    height: 15.625rem;
+    border: 0.3125rem solid $akcent-color;
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.25rem;
+  }
+
+  &__step-2 {
+    background-color: $akcent-color;
+    color: $bg-color;
+  }
+
+  &__step-3 {
+    background-color: $btn-color;
+    border: 0.3125rem solid $btn-color;
+    color: $bg-color;
+  }
+
+  &__step-img {
+    margin-bottom: 1.875rem;
+  }
+}

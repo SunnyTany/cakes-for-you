@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкус детства</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+  <!-- start HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__wrapper">
+
+        <!-- start ROW-1 -->
+        <div class="header__row-1">
+
+          <!-- start nav-menu -->
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="goods.html">
+                  Продукция
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="payment-delivery.html">
+                  Доставка и
+                  оплата
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link header__link--active" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end nav-menu -->
+
+          <a class="header__btn-order btn-order" href="./order.html">
+            <img class="header__btn-order-img" src="./assets/images/header/cart.svg" alt="cart">
+            <span>Заказать</span>
+          </a>
+
+        </div>
+        <!-- end ROW-1 -->
+
+        <!-- start ROW-2 -->
+        <div class="header__row-2">
+
+          <a class="header__logo-link" href="./index.html">
+            <img class="header__logo-img" src="./assets/images/header/Logo.svg" alt="logo">
+          </a>
+
+          <!-- start CONTACTS -->
+          <div class="header__contacts">
+
+            <div class="header__social-icons">
+              <a class="header__social-icon header__facebook" target="_blank" href="https://www.facebook.com/"></a>
+              <a class="header__social-icon header__instagram" target="_blank" href="https://www.instagram.com/"></a>
+              <a class="header__social-icon header__telegram" target="_blank" href="https://t.me/rubka14"></a>
+            </div>
+
+            <button class="header__feedback">Перезвоните мне</button>
+
+          </div>
+          <!-- end CONTACTS -->
+        </div>
+        <!-- end ROW-2 -->
+
+      </div>
+    </div>
+  </header>
+  <!-- end HEADER -->
+
+  <!-- start FOOTER -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- start TOP BLOCK -->
+      <div class="footer__top-block">
+
+        <!-- start LEFT block -->
+        <div class="footer__left-block">
+
+          <!-- start links -->
+          <div class="footer__links">
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Главная</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="goods.html">Продукция</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="payment-delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end links -->
+
+          <div class="footer__social-icons">
+            <a class="footer__social-icon footer__facebook" target="_blank" href="https://www.facebook.com/"></a>
+            <a class="footer__social-icon footer__instagram" target="_blank" href="https://www.instagram.com/"></a>
+            <a class="footer__social-icon footer__telegram" target="_blank" href="https://t.me/rubka14"></a>
+          </div>
+
+        </div>
+        <!-- end LEFT block -->
+
+        <!-- start RIGHT block -->
+        <div class="footer__right-block">
+
+          <div class="footer__phone">
+            <img class="footer__img" src="./assets/images/footer/phone.svg" alt="phone">
+            <a class="footer__text" href="tel:380668267964">+38 (066) 826 79 64</a>
+          </div>
+          <div class="footer__email">
+            <img class="footer__img" src="./assets/images/footer/e-mail.svg" alt="email">
+            <a class="footer__text" href="mailto:vasvera81@gmail.com">vasvera81@gmail.com</a>
+          </div>
+          <div class="footer__time">
+            <img class="footer__img" src="./assets/images/footer/time.svg" alt="time">
+            <span class="footer__time-text">пн - пт 9:00 - 20:00</span>
+          </div>
+          <div class="footer__location">
+            <img class="footer__img" src="./assets/images/footer/location.svg" alt="location">
+            <span class="footer__location-text">все районы г Харьков</span>
+          </div>
+        </div>
+        <!-- end RIGHT block -->
+
+      </div>
+      <!-- end TOP BLOCK -->
+
+      <!-- start BOTTOM BLOCK -->
+      <div class="footer__bottom-block">
+        <a class="footer__bottom link" href="mailto:webgalaxy.order@gmail.com">
+          Сайт сделан студией <strong class="footer__strong">WEB Galaxy</strong>
+        </a>
+        <p class="footer__bottom">
+          &#169; Вкус детства - 2024
+        </p>
+      </div>
+      <!-- end BOTTOM BLOCK -->
+    </div>
+  </footer>
+  <!-- end FOOTER -->
+
+
+
+  <!-- start feedback-form -->
+  <div class="feedback-form">
+    <div class="feedback-form__close-btn"></div>
+    <h3 class="feedback-form__title">
+      Заказать обратный звонок
+    </h3>
+    <div class="feedback-form__content">
+      <form class="feedback-form__form" action="post">
+        <input class="feedback-form__input" type="text" name="fio" placeholder="Имя" required>
+        <input class="feedback-form__input" type="tel" name="tel" placeholder="Телефон" required>
+        <div class="feedback-form__result" id="form_result"></div>
+        <button class="feedback-form__btn" id="submit" type="submit">Заказать
+          звонок</button>
+      </form>
+      <img class="feedback-form__img" src="./assets/images/cupcake.svg" alt="cake">
+    </div>
+  </div>
+  <!-- end feedback-form -->
+
+</body>
+
+</html>

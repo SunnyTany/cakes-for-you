@@ -1,0 +1,85 @@
+.advantages {
+  margin: 6.25rem 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+
+  &__title {
+    @include section-title;
+  }
+
+  &__content {
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3rem;
+  }
+
+  &__right-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &____right-block {
+    @include adv-block;
+  }
+
+  &__list {
+    @include adv-block;
+    margin-right: 16rem;
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+    text-align: right;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -50px;
+      width: 25px;
+      height: 25px;
+      background-color: #421A18;
+      border-radius: 50%;
+    }
+
+    &:nth-child(1) {
+      right: -6.25rem;
+    }
+
+    &:nth-child(2) {
+      right: -3.125rem;
+    }
+
+    &:nth-child(4) {
+      right: -3.125rem;
+    }
+
+    &:nth-child(5) {
+      right: -6.25rem;
+    }
+  }
+
+  &__img {
+    border-radius: 1.25rem;
+    margin-right: 1.875rem;
+    object-fit: cover;
+  }
+
+  &__text {
+    text-align: right;
+    margin-bottom: 3.125rem;
+  }
+
+  &__btn {
+    @include btn-order;
+    transition: $transition;
+
+    &:hover {
+      background-color: $bg-color;
+      color: $akcent-color;
+    }
+  }
+}
