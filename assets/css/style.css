@@ -1304,6 +1304,9 @@ button {
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
 
+  border-bottom: 0.0625rem dashed #a2101a;
+
+  font-size: 1.25rem;
   font-weight: 700;
 }
 .contacts__link:hover {

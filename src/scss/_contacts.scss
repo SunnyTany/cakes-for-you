@@ -32,6 +32,8 @@
   &__link {
     font-weight: $fw-bold;
     transition: $transition;
+    font-size: 1.25rem;
+    border-bottom: 0.0625rem dashed $btn-color;
 
     &:hover {
       color: $btn-color;
